@@ -15,7 +15,7 @@ export const LimitedTimeOffers: React.FC<LimitedTimeOffersProps> = ({
   const offerProducts = products.filter((p) => p.onSale).slice(0, 4);
 
   return (
-    <section className="py-16 bg-[#fff8f6]">
+    <section id="offers" className="py-16 bg-[#fff8f6]">
       <div className="max-w-[1440px] mx-auto px-4 md:px-16">
         {/* Header */}
         <div className="flex flex-col items-center mb-12 text-center">
