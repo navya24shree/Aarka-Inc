@@ -1,4 +1,10 @@
 import React from 'react';
+import c1 from '../../assets/c1.png';
+import c2 from '../../assets/c2.png';
+import c3 from '../../assets/c3.jpeg';
+import c4 from '../../assets/c4.jpeg';
+import c5 from '../../assets/c5.jpeg';
+import c6 from '../../assets/c6.jpeg';
 
 interface CategoryNavProps {
   onSelectCategory: (category: string) => void;
@@ -10,38 +16,32 @@ export const CategoryNav: React.FC<CategoryNavProps> = ({
   const categories = [
     {
       name: 'BULBS',
-      image:
-        '../assets/c1.png',
+      image: c1,
       categoryQuery: 'Lighting',
     },
     {
       name: 'GENERATOR',
-      image:
-        '../assets/c2.png',
+      image: c2,
       categoryQuery: 'Generators',
     },
     {
       name: 'FANS',
-      image:
-        '../assets/c3.jpeg',
+      image: c3,
       categoryQuery: 'Fans',
     },
     {
       name: 'RELAY',
-      image:
-        '../assets/c4.jpeg',
+      image: c4,
       categoryQuery: 'Relay Modules',
     },
     {
       name: 'SENSORS',
-      image:
-        '../assets/c5.jpeg',
+      image: c5,
       categoryQuery: 'Sensors',
     },
     {
       name: 'METER',
-      image:
-        '../assets/c6.jpeg',
+      image: c6,
       categoryQuery: 'Meters',
     },
   ];
