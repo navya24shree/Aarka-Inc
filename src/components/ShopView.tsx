@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Product } from '../types';
-import { Heart, ShoppingBag, X, SlidersHorizontal, RotateCcw, ArrowUpDown } from 'lucide-react';
+import { ShoppingBag, X, SlidersHorizontal, RotateCcw, ArrowUpDown } from 'lucide-react';
 
 interface ShopViewProps {
   products: Product[];
@@ -26,7 +26,6 @@ export const ShopView: React.FC<ShopViewProps> = ({
   const [maxPrice, setMaxPrice] = useState<string>('');
   const [appliedPriceRange, setAppliedPriceRange] = useState<{ min: number; max: number } | null>(null);
   const [sortBy, setSortBy] = useState<'featured' | 'low-high' | 'high-low' | 'newest'>('featured');
-  const [favorites, setFavorites] = useState<Record<string, boolean>>({});
 
   // Mobile Filter Modal State
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
@@ -86,11 +85,6 @@ export const ShopView: React.FC<ShopViewProps> = ({
     const min = parseFloat(minPrice) || 0;
     const max = parseFloat(maxPrice) || Infinity;
     setAppliedPriceRange({ min, max });
-  };
-
-  const toggleFavorite = (id: string, e: React.MouseEvent) => {
-    e.stopPropagation();
-    setFavorites((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
   const activeFilterCount = selectedCategories.length + (appliedPriceRange ? 1 : 0);
@@ -355,7 +349,6 @@ export const ShopView: React.FC<ShopViewProps> = ({
           ) : (
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
               {filteredProducts.map((prod) => {
-                const isFav = favorites[prod.id];
                 return (
                   <div
                     key={prod.id}
@@ -375,17 +368,6 @@ export const ShopView: React.FC<ShopViewProps> = ({
                         </span>
                       )}
                     </div>
-
-                    {/* Favorite Heart Button */}
-                    <button
-                      onClick={(e) => toggleFavorite(prod.id, e)}
-                      className={`absolute top-2 right-2 sm:top-3 sm:right-3 z-10 w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-white/70 backdrop-blur-sm border border-white transition-colors cursor-pointer ${
-                        isFav ? 'text-red-500' : 'text-gray-500 hover:text-[#ab2f00]'
-                      }`}
-                      aria-label="Add to Favorites"
-                    >
-                      <Heart className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${isFav ? 'fill-red-500' : ''}`} />
-                    </button>
 
                     {/* Image Area */}
                     <div className="aspect-square bg-[#fff1ed] relative overflow-hidden flex items-center justify-center p-3 sm:p-6">
