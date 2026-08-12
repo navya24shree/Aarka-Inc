@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../assets/logo.png';
 
 export const Footer: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ export const Footer: React.FC = () => {
         {/* Brand Summary */}
         <div className="flex flex-col gap-2 max-w-xs">
           <div className="flex items-center gap-3">
-            <img src="/assets/logo.png" alt="Aarka Inc" className="h-10 w-auto" />
+            <img src={logo} alt="Aarka Inc" className="h-10 w-auto" />
             <span className="font-extrabold text-2xl text-[#271813] tracking-tighter">
               Aarka Inc
             </span>

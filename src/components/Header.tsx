@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Menu, X } from 'lucide-react';
+import logo from '../../assets/logo.png';
 
 interface HeaderProps {
   activeTab: 'home' | 'shop';
@@ -62,7 +63,7 @@ export const Header: React.FC<HeaderProps> = ({
             }}
             className="font-extrabold text-2xl tracking-tighter text-left cursor-pointer focus:outline-none transition-colors"
           >
-            <img src="/assets/logo.png" alt="Aarka Inc" className="h-10 sm:h-14 w-auto" />          </button>
+            <img src={logo} alt="Aarka Inc" className="h-10 sm:h-14 w-auto" />          </button>
         </div>
 
         {/* Navigation Links */}

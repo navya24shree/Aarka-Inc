@@ -1,4 +1,5 @@
 import React from 'react';
+import heroBg from '../../assets/hero.png';
 
 interface HeroSectionProps {
   onShopNow: () => void;
@@ -37,7 +38,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onShopNow }) => {
         {/* Right Watch Display */}
         <div className="w-56 h-56 sm:w-72 sm:h-72 md:w-[380px] md:h-[380px] lg:w-[450px] lg:h-[450px] bg-white rounded-full flex items-center justify-center shadow-2xl relative shrink-0">
           <img
-            src="../assets/hero.png"
+            src={heroBg}
             alt="Lighting"
             className="w-36 h-36 sm:w-48 sm:h-48 md:w-[260px] md:h-[260px] lg:w-[300px] lg:h-[300px] object-contain"
           />
