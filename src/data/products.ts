@@ -1,5 +1,31 @@
 import { Product, Review } from '../types';
 
+// Import all product images
+import b1 from '../../assets/prod-images/b1.png';
+import b2 from '../../assets/prod-images/b2.png';
+import b3 from '../../assets/prod-images/b3.png';
+import f1 from '../../assets/prod-images/f1.png';
+import f2 from '../../assets/prod-images/f2.png';
+import f3 from '../../assets/prod-images/f3.png';
+import f4 from '../../assets/prod-images/f4.png';
+import f5 from '../../assets/prod-images/f5.png';
+import f6 from '../../assets/prod-images/f6.png';
+import f7 from '../../assets/prod-images/f7.png';
+import g1 from '../../assets/prod-images/g1.png';
+import m1 from '../../assets/prod-images/m1.png';
+import m2 from '../../assets/prod-images/m2.png';
+import r1 from '../../assets/prod-images/r1.png';
+import r2 from '../../assets/prod-images/r2.png';
+import r3 from '../../assets/prod-images/r3.png';
+import r4 from '../../assets/prod-images/r4.png';
+import r5 from '../../assets/prod-images/r5.png';
+import r6 from '../../assets/prod-images/r6.png';
+import s1 from '../../assets/prod-images/s1.png';
+import s2 from '../../assets/prod-images/s2.png';
+import s3 from '../../assets/prod-images/s3.png';
+import s4 from '../../assets/prod-images/s4.png';
+import s5 from '../../assets/prod-images/s5.png';
+
 export const INITIAL_PRODUCTS: Product[] = [
   {
     id: 'prod-1',
@@ -8,7 +34,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 140.0,
     originalPrice: 150.0,
     rating: 5,
-    image:'../assets/prod-images/b1.png',
+    image: b1,
     onSale: true,
     isNew: true,
     discountPercentage: 7,
@@ -26,7 +52,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 110.0,
     originalPrice: 120.0,
     rating: 4,
-    image: '../assets/prod-images/b2.png',
+    image: b2,
     onSale: true,
     specs: {
       'Processor': 'Octa-Core 3.2GHz',
@@ -42,7 +68,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 110.0,
     originalPrice: 120.0,
     rating: 4,
-    image: '../assets/prod-images/b3.png',
+    image: b3,
     onSale: true,
     specs: {
       'Processor': 'Octa-Core 3.2GHz',
@@ -58,7 +84,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Fans',
     price: 45.0,
     rating: 5,
-    image: '../assets/prod-images/f1.png',
+    image: f1,
     isNew: true,
     specs: {
       'Channels': '4 Independent Isolated Channels',
@@ -73,7 +99,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Fans',
     price: 45.0,
     rating: 5,
-    image: '../assets/prod-images/f2.png',
+    image: f2,
     isNew: true,
     specs: {
       'Channels': '4 Independent Isolated Channels',
@@ -88,7 +114,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Fans',
     price: 45.0,
     rating: 5,
-    image: '../assets/prod-images/f3.png',
+    image: f3,
     isNew: true,
     specs: {
       'Channels': '4 Independent Isolated Channels',
@@ -103,7 +129,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Fans',
     price: 45.0,
     rating: 5,
-    image: '../assets/prod-images/f4.png',
+    image: f4,
     isNew: true,
     specs: {
       'Channels': '4 Independent Isolated Channels',
@@ -118,7 +144,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Fans',
     price: 45.0,
     rating: 5,
-    image: '../assets/prod-images/f5.png',
+    image: f5,
     isNew: true,
     specs: {
       'Channels': '4 Independent Isolated Channels',
@@ -133,7 +159,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Fans',
     price: 45.0,
     rating: 5,
-    image: '../assets/prod-images/f6.png',
+    image: f6,
     isNew: true,
     specs: {
       'Channels': '4 Independent Isolated Channels',
@@ -148,7 +174,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Fans',
     price: 45.0,
     rating: 5,
-    image: '../assets/prod-images/f7.png',
+    image: f7,
     isNew: true,
     specs: {
       'Channels': '4 Independent Isolated Channels',
@@ -163,7 +189,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Relay Modules',
     price: 45.0,
     rating: 5,
-    image: '../assets/prod-images/r1.png',
+    image: r1,
     isNew: true,
     specs: {
       'Channels': '4 Independent Isolated Channels',
@@ -178,7 +204,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Relay Modules',
     price: 45.0,
     rating: 5,
-    image: '../assets/prod-images/r2.png',
+    image: r2,
     isNew: true,
     specs: {
       'Channels': '4 Independent Isolated Channels',
@@ -193,7 +219,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Generators',
     price: 1299.0,
     rating: 5,
-    image: '../assets/prod-images/g1.png',
+    image: g1,
     specs: {
       'Output Power': '7500 Peak Watts / 6800 Running',
       'Fuel Type': 'Ultra-low Sulfur Diesel',
@@ -207,7 +233,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Relay Modules',
     price: 350.0,
     rating: 5,
-    image: '../assets/prod-images/r3.png',
+    image: r3,
     onSale: true,
     discountPercentage: 15,
     specs: {
@@ -223,7 +249,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Relay Modules',
     price: 89.99,
     rating: 3,
-    image: '../assets/prod-images/r4.png',
+    image: r4,
     onSale: true,
     specs: {
       'Connectivity': 'Bluetooth 5.3 & AUX',
@@ -237,7 +263,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Relay Modules',
     price: 899.0,
     rating: 4,
-    image: '../assets/prod-images/r5.png',
+    image: r5,
     onSale: true,
     specs: {
       'Processor': 'Intel Core i7-14700H',
@@ -252,7 +278,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Relay Modules',
     price: 199.0,
     rating: 5,
-    image: '../assets/prod-images/r6.png',
+    image: r6,
     specs: {
       'Driver': '50mm Neodymium Titanium',
       'Frequency Response': '10Hz - 40,000Hz',
@@ -265,7 +291,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Sensors',
     price: 129.0,
     rating: 4,
-    image: '../assets/prod-images/s1.png',
+    image: s1,
     specs: {
       'Sound': '7.1 Spatial Audio',
       'Mic': 'Detachable Noise-Canceling Boom',
@@ -279,7 +305,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 159.0,
     originalPrice: 179.0,
     rating: 5,
-    image: '../assets/prod-images/s2.png',
+    image: s2,
     onSale: true,
     specs: {
       'Latency': '<15ms Ultra Low Latency',
@@ -293,7 +319,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Sensors',
     price: 75.0,
     rating: 5,
-    image: '../assets/prod-images/s3.png',
+    image: s3,
     specs: {
       'Protocol': 'Modbus RTU over RS485',
       'Accuracy': '±0.2°C Temperature / ±1.5% RH',
@@ -306,7 +332,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Sensors',
     price: 115.0,
     rating: 4,
-    image: '../assets/prod-images/s4.png',
+    image: s4,
     specs: {
       'Luminous Efficacy': '160 lm/W (32,000 Lumens)',
       'Lifespan': '50,000 Hours L70',
@@ -319,7 +345,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Sensors',
     price: 115.0,
     rating: 4,
-    image: '../assets/prod-images/s5.png',
+    image: s5,
     specs: {
       'Luminous Efficacy': '160 lm/W (32,000 Lumens)',
       'Lifespan': '50,000 Hours L70',
@@ -332,7 +358,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Meters',
     price: 115.0,
     rating: 4,
-    image: '../assets/prod-images/m1.png',
+    image: m1,
     specs: {
       'Luminous Efficacy': '160 lm/W (32,000 Lumens)',
       'Lifespan': '50,000 Hours L70',
@@ -345,7 +371,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     category: 'Meters',
     price: 115.0,
     rating: 4,
-    image: '../assets/prod-images/m2.png',
+    image: m2,
     specs: {
       'Luminous Efficacy': '160 lm/W (32,000 Lumens)',
       'Lifespan': '50,000 Hours L70',
